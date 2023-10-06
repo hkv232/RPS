@@ -1,0 +1,109 @@
+body{
+  background-color: rgb(10, 10, 10);
+  color: white;
+  font-family: Arial;
+
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 700;
+
+}
+
+.move-icon{
+  height: 280px;
+  margin-left: -49px;
+  margin-top: -44px;
+}
+
+.move-button{
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  cursor: pointer;
+  transition: opacity .1s;
+
+}
+
+.move-button:active{
+  opacity: 0;
+}
+
+.moves{
+  display: flex;
+  justify-content: center;
+}
+
+.result{
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.img-moves{
+  font: 10px;
+}
+
+.score{
+  margin-top: 10px;
+}
+
+.reset-score-button,
+.auto-play-button{
+  background-color: white;
+  border: none;
+  font-size: 16px;
+  padding: 15px 50px;
+  cursor: pointer;
+
+}
+
+.game-stats{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+table{
+  border-collapse: collapse;
+  border: 2px solid white;
+
+}
+
+td{
+  border: 0px solid white;
+  padding: 10px;
+  text-align: center;
+}
+
+.result-table{
+  border-right: 1px solid white;
+}
+
+.wtl{
+  border-top: 1px solid white;
+}
+
+.choice-icon{
+  height: 100px;
+}
+
+.moves-display{
+  font-size: 16px;
+}
+
+.moves-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0px 50px;
+}
