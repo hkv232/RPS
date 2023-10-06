@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock Paper Scissors</title>
 
-  <link rel="stylesheet" href="10-rock-paper-scissors.css">
+  <link rel="stylesheet" href="12-rock-paper-scissors.css">
 </head>
 
 <body>
@@ -63,28 +63,36 @@
 
     <p class="js-score score"></p>
 
-    <button onclick="
+    <div>
 
-      score.wins = 0;
-      score.loss = 0;
-      score.ties = 0;
+      <button class="auto-play-button" onclick="autoPlay();">Auto Play</button>
 
-      localStorage.removeItem('score');
+      <button onclick="
 
-      updateScoreElement();
-      document.querySelector('.js-result').innerHTML = `Let's Play`;
+        score.wins = 0;
+        score.loss = 0;
+        score.ties = 0;
+
+        localStorage.removeItem('score');
+
+        updateScoreElement();
+        document.querySelector('.js-result').innerHTML = `Let's Play`;
+        
+
+
+
+      
+      " class="reset-score-button">Reset Score</button>
+
       
 
-
-
-    
-    " class="reset-score-button">Reset Score</button>
+  </div>
 
   </div>
   
 
 <img src="media/${computerMove}-choice.png" class="choice-icon" alt="">
 
-  <script src="10-rock-paper-scissors.js"> </script>
+  <script src="12-rock-paper-scissors.js"> </script>
 </body>
 </html>
